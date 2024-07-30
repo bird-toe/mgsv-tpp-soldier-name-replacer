@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LangFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Endianess="BigEndian">
+  <Entries>
+    <Entry Key="128440050" Color="1" Value="Frigid $NAME205$" />
+    <Entry Key="3908643284" Color="1" Value="Vile $NAME62$" />
+    <Entry Key="1616891796" Color="1" Value="Gray $NAME63$" />
+    <Entry Key="2750329428" Color="1" Value="Brass $NAME64$" />
+    <Entry Key="3939824150" Color="1" Value="Roaring $NAME65$" />
+    <Entry Key="3531021653" Color="1" Value="Sly $NAME66$" />
+    <Entry Key="3843460332" Color="1" Value="Devil $NAME67$" />
+    <Entry Key="3883090986" Color="1" Value="Bullet $NAME68$" />
+    <Entry Key="1352389860" Color="1" Value="Green $NAME69$" />
+    <Entry Key="137144801" Color="1" Value="Flaming $NAME70$" />
+    <Entry Key="1738995605" Color="1" Value="Night $NAME71$" />
+    <Entry Key="2616622298" Color="1" Value="Sadistic $NAME72$" />
+    <Entry Key="2146874427" Color="1" Value="Hungry $NAME73$" />
+    <Entry Key="2792939812" Color="1" Value="Growling $NAME74$" />
+    <Entry Key="4227720282" Color="1" Value="Hunting $NAME75$" />
+    <Entry Key="966128678" Color="1" Value="Sunny $NAME76$" />
+    <Entry Key="2672787019" Color="1" Value="Howling $NAME77$" />
+    <Entry Key="4287270079" Color="1" Value="Panzer $NAME78$" />
+    <Entry Key="1690051202" Color="1" Value="Mad $NAME79$" />
+    <Entry Key="2818816771" Color="1" Value="Sly $NAME80$" />
+    <Entry Key="3665153571" Color="1" Value="Rampant $NAME$81" />
+    <Entry Key="784817466" Color="1" Value="Panzer $NAME82$" />
+    <Entry Key="378603497" Color="1" Value="Roaring $NAME83$" />
+    <Entry Key="379918899" Color="1" Value="Dire $NAME84$" />
+    <Entry Key="3123883466" Color="1" Value="Stone $NAME85$" />
+    <Entry Key="4159822999" Color="1" Value="Raving $NAME86$" />
+    <Entry Key="1584542619" Color="1" Value="Eagle $NAME87$" />
+    <Entry Key="2460137427" Color="1" Value="$NAME88$" />
+    <Entry Key="692444795" Color="1" Value="Grizzly $NAME89$" />
+    <Entry Key="535853931" Color="1" Value="Doom $NAME90$" />
+    <Entry Key="3681118153" Color="1" Value="$NAME91$" />
+    <Entry Key="2483728343" Color="1" Value="$NAME92$" />
+    <Entry Key="3072840868" Color="1" Value="Komodo $NAME93$" />
+    <Entry Key="364312041" Color="1" Value="Jade $NAME94$" />
+    <Entry Key="1435074209" Color="1" Value="Bullet $NAME95$" />
+    <Entry Key="2614576157" Color="1" Value="Night $NAME96$" />
+    <Entry Key="1863184634" Color="1" Value="Cunning $NAME97$" />
+    <Entry Key="1219745737" Color="1" Value="Laughing $NAME98$" />
+    <Entry Key="1598123957" Color="1" Value="Crystal $NAME99$" />
+    <Entry Key="2340668970" Color="1" Value="Silent $NAME100$" />
+    <Entry Key="1583849548" Color="1" Value="Dire $NAME101$" />
+    <Entry Key="1947263280" Color="1" Value="Blue $NAME102$" />
+    <Entry Key="1996372361" Color="1" Value="Copper $NAME103$" />
+    <Entry Key="3798093976" Color="1" Value="Blazing $NAME104$" />
+    <Entry Key="4110072014" Color="1" Value="Bullet $NAME105$" />
+    <Entry Key="1198374595" Color="1" Value="Ochre $NAME106$" />
+    <Entry Key="567381716" Color="1" Value="Bitter $NAME107$" />
+    <Entry Key="2075919377" Color="1" Value="Silent $NAME108$" />
+    <Entry Key="3354109996" Color="1" Value="Steel $NAME109$" />
+    <Entry Key="3750253655" Color="1" Value="Howling $NAME110$" />
+    <Entry Key="1415115557" Color="1" Value="Stalking $NAME111$" />
+    <Entry Key="4043549808" Color="1" Value="Jumping $NAME112$" />
+    <Entry Key="3796747830" Color="1" Value="Copper $NAME113$" />
+    <Entry Key="1904576825" Color="1" Value="Hungry $NAME114$" />
+    <Entry Key="3235804583" Color="1" Value="Blazing $NAME115$" />
+    <Entry Key="2149646731" Color="1" Value="Greedy $NAME116$" />
+    <Entry Key="1406439041" Color="1" Value="Steel $NAME117$" />
+    <Entry Key="4191210060" Color="1" Value="Gray $NAME118$" />
+    <Entry Key="3585469582" Color="1" Value="Pouncing $NAME119$" />
+    <Entry Key="585105281" Color="1" Value="$NAME120$" />
+    <Entry Key="1369840540" Color="1" Value="$NAME121$" />
+    <Entry Key="2307342632" Color="1" Value="Doom $NAME122$" />
+    <Entry Key="4227986143" Color="1" Value="Prowling $NAME206$" />
+    <Entry Key="3709438763" Color="1" Value="Blue $NAME123$" />
+    <Entry Key="3929975900" Color="1" Value="Sky $NAME124$" />
+    <Entry Key="1369609663" Color="1" Value="Vampire $NAME125$" />
+    <Entry Key="4137283597" Color="1" Value="Goblin $NAME126$" />
+    <Entry Key="533578683" Color="1" Value="Wild $NAME127$" />
+    <Entry Key="1026736901" Color="1" Value="Doom $NAME128$" />
+    <Entry Key="3684809995" Color="1" Value="Brutal $NAME129$" />
+    <Entry Key="1077192221" Color="1" Value="Dizzy $NAME130$" />
+    <Entry Key="3510263155" Color="1" Value="Pouncing $NAME131$" />
+    <Entry Key="2059126595" Color="1" Value="Bloody $NAME132$" />
+    <Entry Key="2672644809" Color="1" Value="Poison $NAME133$" />
+    <Entry Key="1068394206" Color="1" Value="Killer $NAME134$" />
+    <Entry Key="1001998947" Color="1" Value="Pouncing $NAME135$" />
+    <Entry Key="3726829871" Color="1" Value="Greedy $NAME136$" />
+    <Entry Key="1112954179" Color="1" Value="Jade $NAME137$" />
+    <Entry Key="1987477853" Color="1" Value="Spunky $NAME138$" />
+    <Entry Key="1363585501" Color="1" Value="Black $NAME139$" />
+    <Entry Key="1851620060" Color="1" Value="Silent $NAME140$" />
+    <Entry Key="1806495299" Color="1" Value="Flaming $NAME207$" />
+    <Entry Key="2982270626" Color="1" Value="Ashen $NAME208$" />
+    <Entry Key="3776760760" Color="1" Value="Cannibal $NAME209$" />
+    <Entry Key="3504027941" Color="1" Value="White $NAME141$" />
+    <Entry Key="2263818073" Color="1" Value="Green $NAME142$" />
+    <Entry Key="1140501780" Color="1" Value="Ashen $NAME143$" />
+    <Entry Key="2589753687" Color="1" Value="Green $NAME144$" />
+    <Entry Key="1890716277" Color="1" Value="Bastard $NAME145$" />
+    <Entry Key="4175928618" Color="1" Value="Brutal $NAME146$" />
+    <Entry Key="2946139467" Color="1" Value="Killer $NAME147$" />
+    <Entry Key="3124804682" Color="1" Value="Raging $NAME148$" />
+    <Entry Key="3134527798" Color="1" Value="Night $NAME149$" />
+    <Entry Key="2728934268" Color="1" Value="Hulking $NAME150$" />
+    <Entry Key="1653171263" Color="1" Value="Hungry $NAME151$" />
+    <Entry Key="276234211" Color="1" Value="Dizzy $NAME152$" />
+    <Entry Key="3080695299" Color="1" Value="Lonely $NAME153$" />
+    <Entry Key="3359754318" Color="1" Value="Dancing $NAME154$" />
+    <Entry Key="1243852818" Color="1" Value="Cunning $NAME155$" />
+    <Entry Key="3928253758" Color="1" Value="Sadistic $NAME156$" />
+    <Entry Key="516914556" Color="1" Value="Sly $NAME210$" />
+    <Entry Key="1402407020" Color="1" Value="$NAME157$" />
+    <Entry Key="2169132360" Color="1" Value="Hideo" />
+    <Entry Key="4040964389" Color="1" Value="$NAME158$" />
+    <Entry Key="2258489710" Color="1" Value="$NAME159$" />
+    <Entry Key="1285566672" Color="1" Value="$NAME160$" />
+    <Entry Key="1666061913" Color="1" Value="$NAME161$" />
+    <Entry Key="2876954203" Color="1" Value="$NAME162$" />
+    <Entry Key="47392923" Color="1" Value="Sly" />
+    <Entry Key="2032084623" Color="1" Value="Vengeful" />
+    <Entry Key="212226502" Color="1" Value="Cunning" />
+    <Entry Key="4041100675" Color="1" Value="Bloody" />
+    <Entry Key="2569923541" Color="1" Value="Flaming" />
+    <Entry Key="2525263417" Color="1" Value="Frigid" />
+    <Entry Key="3212419205" Color="1" Value="Raging" />
+    <Entry Key="205181661" Color="1" Value="Mad" />
+    <Entry Key="41006832" Color="1" Value="Killer" />
+    <Entry Key="488087058" Color="1" Value="Lonely" />
+    <Entry Key="2668032953" Color="1" Value="Running" />
+    <Entry Key="2578811310" Color="1" Value="Hissing" />
+    <Entry Key="4104393235" Color="1" Value="Roaring" />
+    <Entry Key="1835531192" Color="1" Value="Wild" />
+    <Entry Key="2421949079" Color="1" Value="Thunder" />
+    <Entry Key="3206088702" Color="1" Value="Howling" />
+    <Entry Key="107987338" Color="1" Value="Growling" />
+    <Entry Key="367487215" Color="1" Value="Charging" />
+    <Entry Key="4067774077" Color="1" Value="Rampant" />
+    <Entry Key="926742177" Color="1" Value="Spying" />
+    <Entry Key="3891633878" Color="1" Value="Creeping" />
+    <Entry Key="425156695" Color="1" Value="Stalking" />
+    <Entry Key="569905756" Color="1" Value="Raving" />
+    <Entry Key="2859495612" Color="1" Value="Punching" />
+    <Entry Key="73115944" Color="1" Value="Spitting" />
+    <Entry Key="1940031295" Color="1" Value="Vile" />
+    <Entry Key="3833141498" Color="1" Value="Death" />
+    <Entry Key="4290212285" Color="1" Value="Bullet" />
+    <Entry Key="3673946645" Color="1" Value="Glacier" />
+    <Entry Key="3118823082" Color="1" Value="Armored" />
+    <Entry Key="1807206143" Color="1" Value="Brass" />
+    <Entry Key="457148125" Color="1" Value="Prowling" />
+    <Entry Key="438954702" Color="1" Value="Crawling" />
+    <Entry Key="352709349" Color="1" Value="Blazing" />
+    <Entry Key="1493332435" Color="1" Value="Sly" />
+    <Entry Key="3526668340" Color="1" Value="Vengeful" />
+    <Entry Key="3027055154" Color="1" Value="Cunning" />
+    <Entry Key="1167181667" Color="1" Value="Bloody" />
+    <Entry Key="4227583265" Color="1" Value="Flaming" />
+    <Entry Key="4236109030" Color="1" Value="Frigid" />
+    <Entry Key="1634086182" Color="1" Value="Raging" />
+    <Entry Key="1436190084" Color="1" Value="Mad" />
+    <Entry Key="447128218" Color="1" Value="Killer" />
+    <Entry Key="1208152611" Color="1" Value="Lonely" />
+    <Entry Key="226542019" Color="1" Value="Running" />
+    <Entry Key="126982434" Color="1" Value="Hissing" />
+    <Entry Key="707950371" Color="1" Value="Roaring" />
+    <Entry Key="2421315046" Color="1" Value="Wild" />
+    <Entry Key="707890719" Color="1" Value="Thunder" />
+    <Entry Key="3129388423" Color="1" Value="Howling" />
+    <Entry Key="2616304867" Color="1" Value="Growling" />
+    <Entry Key="539415095" Color="1" Value="Charging" />
+    <Entry Key="1922882231" Color="1" Value="Rampant" />
+    <Entry Key="1231928502" Color="1" Value="Spying" />
+    <Entry Key="4155646298" Color="1" Value="Creeping" />
+    <Entry Key="3811606075" Color="1" Value="Stalking" />
+    <Entry Key="698593800" Color="1" Value="Raving" />
+    <Entry Key="2576700075" Color="1" Value="Punching" />
+    <Entry Key="1289530671" Color="1" Value="Spitting" />
+    <Entry Key="3701262967" Color="1" Value="Vile" />
+    <Entry Key="3900240887" Color="1" Value="Death" />
+    <Entry Key="215950613" Color="1" Value="Bullet" />
+    <Entry Key="1659596782" Color="1" Value="Glacier" />
+    <Entry Key="446451850" Color="1" Value="Armored" />
+    <Entry Key="4050036467" Color="1" Value="Brass" />
+    <Entry Key="3681496882" Color="1" Value="Prowling" />
+    <Entry Key="4068615183" Color="1" Value="Crawling" />
+    <Entry Key="867504440" Color="1" Value="Seething" />
+    <Entry Key="935272616" Color="1" Value="Hunting" />
+    <Entry Key="2838144770" Color="1" Value="Blazing" />
+    <Entry Key="3107018193" Color="1" Value="$NAME1$" />
+    <Entry Key="3737775390" Color="1" Value="$NAME2$" />
+    <Entry Key="1928584925" Color="1" Value="$NAME3$" />
+    <Entry Key="3201897397" Color="1" Value="$NAME4$" />
+    <Entry Key="3211319071" Color="1" Value="$NAME5$" />
+    <Entry Key="1588001751" Color="1" Value="$NAME6$" />
+    <Entry Key="328060364" Color="1" Value="$NAME7$" />
+    <Entry Key="581933730" Color="1" Value="$NAME8$" />
+    <Entry Key="1026358434" Color="1" Value="$NAME9$" />
+    <Entry Key="979615535" Color="1" Value="$NAME10$" />
+    <Entry Key="777009586" Color="1" Value="$NAME11$" />
+    <Entry Key="2469159987" Color="1" Value="$NAME12$" />
+    <Entry Key="446242376" Color="1" Value="$NAME13$" />
+    <Entry Key="2485701010" Color="1" Value="$NAME14$" />
+    <Entry Key="3063686699" Color="1" Value="$NAME15$" />
+    <Entry Key="415748230" Color="1" Value="$NAME16$" />
+    <Entry Key="886459910" Color="1" Value="$NAME17$" />
+    <Entry Key="2548853084" Color="1" Value="$NAME18$" />
+    <Entry Key="3165358997" Color="1" Value="$NAME19$" />
+    <Entry Key="1803157819" Color="1" Value="$NAME20$" />
+    <Entry Key="1353883256" Color="1" Value="$NAME21$" />
+    <Entry Key="3539916787" Color="1" Value="$NAME22$" />
+    <Entry Key="377118900" Color="1" Value="$NAME23$" />
+    <Entry Key="2156236785" Color="1" Value="$NAME24$" />
+    <Entry Key="286186678" Color="1" Value="$NAME25$" />
+    <Entry Key="2959267155" Color="1" Value="$NAME26$" />
+    <Entry Key="1564811768" Color="1" Value="$NAME27$" />
+    <Entry Key="58838251" Color="1" Value="$NAME28$" />
+    <Entry Key="2507409683" Color="1" Value="$NAME29$" />
+    <Entry Key="2390707771" Color="1" Value="$NAME30$" />
+    <Entry Key="68764688" Color="1" Value="$NAME31$" />
+    <Entry Key="2238816803" Color="1" Value="$NAME32$" />
+    <Entry Key="788671114" Color="1" Value="$NAME33$" />
+    <Entry Key="2387975912" Color="1" Value="$NAME34$" />
+    <Entry Key="2151448180" Color="1" Value="$NAME35$" />
+    <Entry Key="3383739845" Color="1" Value="$NAME36$" />
+    <Entry Key="3928260704" Color="1" Value="$NAME37$" />
+    <Entry Key="1158818867" Color="1" Value="$NAME38$" />
+    <Entry Key="2694289450" Color="1" Value="$NAME39$" />
+    <Entry Key="1170362334" Color="1" Value="$NAME40$" />
+    <Entry Key="1599058777" Color="1" Value="$NAME41$" />
+    <Entry Key="3972981695" Color="1" Value="$NAME42$" />
+    <Entry Key="2627181288" Color="1" Value="$NAME43$" />
+    <Entry Key="4197287578" Color="1" Value="$NAME44$" />
+    <Entry Key="2391851344" Color="1" Value="$NAME212$" />
+    <Entry Key="3418324416" Color="1" Value="$NAME213$" />
+    <Entry Key="3432354372" Color="1" Value="$NAME214$" />
+    <Entry Key="3927584351" Color="1" Value="$NAME215$" />
+    <Entry Key="298877382" Color="1" Value="$NAME216$" />
+    <Entry Key="3185908883" Color="1" Value="$NAME217$" />
+    <Entry Key="2553912404" Color="1" Value="$NAME218$" />
+    <Entry Key="1789801693" Color="1" Value="$NAME219$" />
+    <Entry Key="3940194729" Color="1" Value="$NAME220$" />
+    <Entry Key="3896369574" Color="1" Value="$NAME221$" />
+    <Entry Key="3817118307" Color="1" Value="$NAME222$" />
+    <Entry Key="3444566650" Color="1" Value="$NAME223$" />
+    <Entry Key="561867366" Color="1" Value="$NAME224$" />
+    <Entry Key="3807764025" Color="1" Value="$NAME225$" />
+    <Entry Key="3308261828" Color="1" Value="$NAME226$" />
+    <Entry Key="1583883494" Color="1" Value="$NAME227$" />
+    <Entry Key="3545494239" Color="1" Value="$NAME228$" />
+    <Entry Key="3523322575" Color="1" Value="$NAME229$" />
+    <Entry Key="2029270054" Color="1" Value="$NAME230$" />
+    <Entry Key="1120648294" Color="1" Value="$NAME231$" />
+    <Entry Key="3059022072" Color="1" Value="$NAME232$" />
+    <Entry Key="3149604996" Color="1" Value="$NAME233$" />
+    <Entry Key="4255505255" Color="1" Value="$NAME234$" />
+    <Entry Key="2553877184" Color="1" Value="$NAME235$" />
+    <Entry Key="3652554333" Color="1" Value="$NAME236$" />
+    <Entry Key="1569318410" Color="1" Value="$NAME237$" />
+    <Entry Key="881668946" Color="1" Value="$NAME238$" />
+    <Entry Key="2765082802" Color="1" Value="$NAME239$" />
+    <Entry Key="2648759248" Color="1" Value="$NAME240$" />
+    <Entry Key="750006617" Color="1" Value="$NAME241$" />
+    <Entry Key="3479890714" Color="1" Value="$NAME242$" />
+    <Entry Key="3661628665" Color="1" Value="$NAME243$" />
+    <Entry Key="1799324131" Color="1" Value="$NAME244$" />
+    <Entry Key="2576494927" Color="1" Value="$NAME245$" />
+    <Entry Key="2483288110" Color="1" Value="$NAME246$" />
+    <Entry Key="2657538867" Color="1" Value="$NAME247$" />
+    <Entry Key="2492323286" Color="1" Value="$NAME248$" />
+    <Entry Key="2641836415" Color="1" Value="$NAME249$" />
+    <Entry Key="2774971555" Color="1" Value="$NAME250$" />
+    <Entry Key="3275425948" Color="1" Value="$NAME251$" />
+    <Entry Key="4078987123" Color="1" Value="$NAME252$" />
+    <Entry Key="351623898" Color="1" Value="$NAME253$" />
+    <Entry Key="3071661315" Color="1" Value="Razor" />
+    <Entry Key="3084995764" Color="1" Value="Rumble" />
+    <Entry Key="4020338751" Color="1" Value="Rabid" />
+    <Entry Key="3049470435" Color="1" Value="Devil" />
+    <Entry Key="2740203294" Color="1" Value="Frantic" />
+    <Entry Key="2685303084" Color="1" Value="Sinister" />
+    <Entry Key="787511810" Color="1" Value="Rancid" />
+    <Entry Key="1940664565" Color="1" Value="Dark" />
+    <Entry Key="153182160" Color="1" Value="Greedy" />
+    <Entry Key="1022036555" Color="1" Value="Sadistic" />
+    <Entry Key="3422719116" Color="1" Value="Scowling" />
+    <Entry Key="1903715043" Color="1" Value="Hungry" />
+    <Entry Key="3819217703" Color="1" Value="Smoking" />
+    <Entry Key="564550205" Color="1" Value="Bitter" />
+    <Entry Key="1106806433" Color="1" Value="Dizzy" />
+    <Entry Key="1073433322" Color="1" Value="Panzer" />
+    <Entry Key="1898134411" Color="1" Value="Pouncing" />
+    <Entry Key="3923670292" Color="1" Value="Rogue" />
+    <Entry Key="3402251029" Color="1" Value="Night" />
+    <Entry Key="1477954198" Color="1" Value="Green" />
+    <Entry Key="1889230215" Color="1" Value="Dancing" />
+    <Entry Key="2151104046" Color="1" Value="Ashen" />
+    <Entry Key="1294041640" Color="1" Value="Jumping" />
+    <Entry Key="170307623" Color="1" Value="Onyx" />
+    <Entry Key="3016224581" Color="1" Value="Crystal" />
+    <Entry Key="623506068" Color="1" Value="Obsidian" />
+    <Entry Key="3006596623" Color="1" Value="Sky" />
+    <Entry Key="3548942901" Color="1" Value="Blue" />
+    <Entry Key="4277293708" Color="1" Value="Crimson" />
+    <Entry Key="689722938" Color="1" Value="White" />
+    <Entry Key="3133623709" Color="1" Value="Laughing" />
+    <Entry Key="1328247812" Color="1" Value="Silent" />
+    <Entry Key="1405153410" Color="1" Value="Smiling" />
+    <Entry Key="2279684001" Color="1" Value="Shining" />
+    <Entry Key="528402261" Color="1" Value="Silver" />
+    <Entry Key="248871459" Color="1" Value="Poison" />
+    <Entry Key="2285871902" Color="1" Value="Assassin" />
+    <Entry Key="2987363539" Color="1" Value="Ice" />
+    <Entry Key="103556227" Color="1" Value="Twilight" />
+    <Entry Key="1469596805" Color="1" Value="Jade" />
+    <Entry Key="4100776023" Color="1" Value="Spunky" />
+    <Entry Key="2659338852" Color="1" Value="Sunny" />
+    <Entry Key="765441734" Color="1" Value="Seething" />
+    <Entry Key="799141399" Color="1" Value="Hunting" />
+    <Entry Key="1530087303" Color="1" Value="Razor" />
+    <Entry Key="3349658335" Color="1" Value="Rumble" />
+    <Entry Key="2050302624" Color="1" Value="Rabid" />
+    <Entry Key="3316992871" Color="1" Value="Devil" />
+    <Entry Key="1967989041" Color="1" Value="Frantic" />
+    <Entry Key="1963495198" Color="1" Value="Sinister" />
+    <Entry Key="2223259785" Color="1" Value="Rancid" />
+    <Entry Key="1884556406" Color="1" Value="Dark" />
+    <Entry Key="567857639" Color="1" Value="Greedy" />
+    <Entry Key="75587325" Color="1" Value="Sadistic" />
+    <Entry Key="4285558448" Color="1" Value="Scowling" />
+    <Entry Key="1538630677" Color="1" Value="Hungry" />
+    <Entry Key="1931092572" Color="1" Value="Smoking" />
+    <Entry Key="3017697064" Color="1" Value="Bitter" />
+    <Entry Key="1464019913" Color="1" Value="Dizzy" />
+    <Entry Key="3138380942" Color="1" Value="Panzer" />
+    <Entry Key="1868069785" Color="1" Value="Pouncing" />
+    <Entry Key="204287578" Color="1" Value="Pirate" />
+    <Entry Key="3281209909" Color="1" Value="Ochre" />
+    <Entry Key="4201970007" Color="1" Value="Cannibal" />
+    <Entry Key="2794199424" Color="1" Value="Goblin" />
+    <Entry Key="3008736677" Color="1" Value="Gray" />
+    <Entry Key="3721539693" Color="1" Value="Stubborn" />
+    <Entry Key="2453137256" Color="1" Value="Steel" />
+    <Entry Key="1259825025" Color="1" Value="Copper" />
+    <Entry Key="1044163952" Color="1" Value="Iron" />
+    <Entry Key="2505147216" Color="1" Value="Black" />
+    <Entry Key="2431204192" Color="1" Value="Crying" />
+    <Entry Key="3870169100" Color="1" Value="Golden" />
+    <Entry Key="3566272969" Color="1" Value="Vampire" />
+    <Entry Key="1992037510" Color="1" Value="Biting" />
+    <Entry Key="975022467" Color="1" Value="Fire" />
+    <Entry Key="4099118707" Color="1" Value="Titanium" />
+    <Entry Key="3660483929" Color="1" Value="Midnight" />
+    <Entry Key="3343094361" Color="1" Value="Grizzly" />
+    <Entry Key="565879369" Color="1" Value="Stone" />
+    <Entry Key="2064740429" Color="1" Value="Hulking" />
+    <Entry Key="2373238221" Color="1" Value="Doom" />
+    <Entry Key="4107866382" Color="1" Value="Striker" />
+    <Entry Key="626492409" Color="1" Value="Dire" />
+    <Entry Key="2099582078" Color="1" Value="Bastard" />
+    <Entry Key="3682701688" Color="1" Value="Brutal" />
+    <Entry Key="2102752583" Color="1" Value="$NAME254$" />
+    <Entry Key="1346661598" Color="1" Value="$NAME255$" />
+    <Entry Key="3683248305" Color="1" Value="$NAME256$" />
+    <Entry Key="4129874273" Color="1" Value="$NAME257$" />
+    <Entry Key="3544528570" Color="1" Value="$NAME258$" />
+    <Entry Key="269485318" Color="1" Value="$NAME259$" />
+    <Entry Key="765471345" Color="1" Value="$NAME260$" />
+    <Entry Key="3680651087" Color="1" Value="$NAME261$" />
+    <Entry Key="529091764" Color="1" Value="$NAME262$" />
+    <Entry Key="2595911043" Color="1" Value="$NAME263$" />
+    <Entry Key="3558614338" Color="1" Value="$NAME264$" />
+    <Entry Key="3799860480" Color="1" Value="$NAME265$" />
+    <Entry Key="480991015" Color="1" Value="$NAME266$" />
+    <Entry Key="2548097198" Color="1" Value="$NAME267$" />
+    <Entry Key="1390522556" Color="1" Value="$NAME268$" />
+    <Entry Key="1890928781" Color="1" Value="$NAME269$" />
+    <Entry Key="1803853464" Color="1" Value="$NAME$270" />
+    <Entry Key="2317939389" Color="1" Value="$NAME45$" />
+    <Entry Key="2571445008" Color="1" Value="$NAME46$" />
+    <Entry Key="2545834319" Color="1" Value="$NAME47$" />
+    <Entry Key="2178095239" Color="1" Value="$NAME48$" />
+    <Entry Key="2648118498" Color="1" Value="$NAME49$" />
+    <Entry Key="3307217077" Color="1" Value="$NAME50$" />
+    <Entry Key="3134739040" Color="1" Value="$NAME51$" />
+    <Entry Key="3893819871" Color="1" Value="$NAME52$" />
+    <Entry Key="712786606" Color="1" Value="$NAME53$" />
+    <Entry Key="2004701790" Color="1" Value="$NAME54$" />
+    <Entry Key="4238943941" Color="1" Value="$NAME55$" />
+    <Entry Key="2113642631" Color="1" Value="$NAME56$" />
+    <Entry Key="3955933304" Color="1" Value="$NAME57$" />
+    <Entry Key="2640117554" Color="1" Value="$NAME58$" />
+    <Entry Key="4131010897" Color="1" Value="$NAME59$" />
+    <Entry Key="1818695104" Color="1" Value="$NAME60$" />
+    <Entry Key="3662337648" Color="1" Value="$NAME61$" />
+    <Entry Key="1162694380" Color="1" Value="Greedy $NAME211$" />
+    <Entry Key="2513920237" Color="1" Value="Rumble $NAME163$" />
+    <Entry Key="2792067316" Color="1" Value="Devil $NAME164$" />
+    <Entry Key="3638424346" Color="1" Value="Dire $NAME165$" />
+    <Entry Key="1154955227" Color="1" Value="Gray $NAME166$" />
+    <Entry Key="1770175949" Color="1" Value="Raving $NAME167$" />
+    <Entry Key="3613579151" Color="1" Value="Ochre $NAME168$" />
+    <Entry Key="553266022" Color="1" Value="Death $NAME169$" />
+    <Entry Key="2292969432" Color="1" Value="Shining $NAME170$" />
+    <Entry Key="3126550265" Color="1" Value="Sunny $NAME171$" />
+    <Entry Key="3982014584" Color="1" Value="Wild $NAME172$" />
+    <Entry Key="1593285601" Color="1" Value="Gray $NAME271$" />
+    <Entry Key="3287853707" Color="1" Value="Ochre $NAME272$" />
+    <Entry Key="1227992879" Color="1" Value="Grizzly $NAME273$" />
+    <Entry Key="2112469034" Color="1" Value="Hungry $NAME274$" />
+    <Entry Key="3145726794" Color="1" Value="Sunny $NAME173$" />
+    <Entry Key="1314377785" Color="1" Value="Crying $NAME174$" />
+    <Entry Key="2053777302" Color="1" Value="Crimson $NAME175$" />
+    <Entry Key="1218031489" Color="1" Value="Wild $NAME275$" />
+    <Entry Key="3710777712" Color="1" Value="Night $NAME276$" />
+    <Entry Key="726151314" Color="1" Value="Pirate $NAME277$" />
+    <Entry Key="1405006558" Color="1" Value="Roaring $NAME278$" />
+    <Entry Key="1203810300" Color="1" Value="Bitter $NAME279$" />
+    <Entry Key="1414754160" Color="1" Value="Blue $NAME280$" />
+    <Entry Key="3226256098" Color="1" Value="Midnight $NAME281$" />
+    <Entry Key="2543632467" Color="1" Value="Frigid $NAME282$" />
+    <Entry Key="1135698119" Color="1" Value="Hunting $NAME283$" />
+    <Entry Key="2041327484" Color="1" Value="Assassin $NAME284$" />
+    <Entry Key="3343860194" Color="1" Value="$NAME176$" />
+    <Entry Key="1281501617" Color="1" Value="$NAME177$" />
+    <Entry Key="508233072" Color="1" Value="Mad $NAME416$" />
+    <Entry Key="3281138775" Color="1" Value="Wild $NAME417$" />
+    <Entry Key="3989740691" Color="1" Value="Blue $NAME296$" />
+    <Entry Key="3219012380" Color="1" Value="Crying $NAME287$" />
+    <Entry Key="326504282" Color="1" Value="$NAME178$" />
+    <Entry Key="2195598296" Color="1" Value="Running $NAME179$" />
+    <Entry Key="3619114880" Color="1" Value="Biting $NAME180$" />
+    <Entry Key="2734471226" Color="1" Value="Spunky $NAME181$" />
+    <Entry Key="4175301817" Color="1" Value="Killer $NAME182$" />
+    <Entry Key="1912142989" Color="1" Value="Ashen $NAME183$" />
+    <Entry Key="904363201" Color="1" Value="Running $NAME184$" />
+    <Entry Key="1334180185" Color="1" Value="Iron $NAME185$" />
+    <Entry Key="4153457672" Color="1" Value="Jade $NAME186$" />
+    <Entry Key="3751558496" Color="1" Value="Dire $NAME187$" />
+    <Entry Key="3317157510" Color="1" Value="Scowling $NAME188$" />
+    <Entry Key="2495463039" Color="1" Value="Fire $NAME189$" />
+    <Entry Key="538500411" Color="1" Value="Brass $NAME190$" />
+    <Entry Key="2530654925" Color="1" Value="Cunning $NAME191$" />
+    <Entry Key="3077569563" Color="1" Value="Spying $NAME192$" />
+    <Entry Key="48626373" Color="1" Value="Viridian $NAME288$" />
+    <Entry Key="3105732278" Color="1" Value="Emerald $NAME289$" />
+    <Entry Key="33658094" Color="1" Value="Crimson $NAME290$" />
+    <Entry Key="3658890576" Color="1" Value="Garnet $NAME291$" />
+    <Entry Key="2633610223" Color="1" Value="Gold $NAME292$" />
+    <Entry Key="3988785537" Color="1" Value="Amber $NAME293$" />
+    <Entry Key="2386461350" Color="1" Value="Silver $NAME294$" />
+    <Entry Key="940199167" Color="1" Value="Ivory $NAME295$" />
+    <Entry Key="408098067" Color="1" Value="Flaming $NAME193$" />
+    <Entry Key="2886326134" Color="1" Value="Running $NAME194$" />
+    <Entry Key="2782097076" Color="1" Value="Frantic $NAME195$" />
+    <Entry Key="3652563822" Color="1" Value="Blazing $NAME196$" />
+    <Entry Key="598287964" Color="1" Value="Biting $NAME197$" />
+    <Entry Key="3206866524" Color="1" Value="Gray $NAME198$" />
+    <Entry Key="1066217463" Color="1" Value="Razor $NAME199$" />
+    <Entry Key="757870812" Color="1" Value="Howling $NAME200$" />
+    <Entry Key="894885473" Color="1" Value="Blue $NAME201$" />
+    <Entry Key="176641515" Color="1" Value="Creeping $NAME202$" />
+    <Entry Key="1257390982" Color="1" Value="Glacier $NAME203$" />
+    <Entry Key="442585109" Color="1" Value="Spunky $NAME204$" />
+  </Entries>
+</LangFile>

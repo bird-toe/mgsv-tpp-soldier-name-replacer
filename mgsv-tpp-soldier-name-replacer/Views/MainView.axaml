@@ -1,0 +1,237 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:MgsvTppSoldierNameReplacer.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
+             x:Class="MgsvTppSoldierNameReplacer.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainViewModel />
+	</Design.DataContext>
+	<TabControl Margin="5">
+		<TabItem Header="Create a Mod">
+			<DockPanel Margin="10" >
+				<Expander DockPanel.Dock="Top" VerticalAlignment="Top">
+					<Expander.Header>
+						<TextBlock FontSize="24" TextWrapping="WrapWithOverflow">
+							Prerequisites
+						</TextBlock >
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							SnakeBite Mod Manager - Required to run mods created by this tool.
+						</TextBlock >
+						<HyperlinkButton Margin="0" Padding="0" NavigateUri="https://www.nexusmods.com/metalgearsolidvtpp/mods/106" >https://www.nexusmods.com/metalgearsolidvtpp/mods/106</HyperlinkButton>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							<LineBreak/>
+							MakeBite - Installed alongside SnakeBite, this is directly used by this tool to package mods.
+						</TextBlock >
+					</StackPanel>
+				</Expander>
+				<TextBlock Margin="0 10 0 0" DockPanel.Dock="Top" TextWrapping="WrapWithOverflow">
+					Please select the location of the MakeBite executable. This should have been installed alongside SnakeBite.
+				</TextBlock>
+				<DockPanel DockPanel.Dock="Top">
+					<Button DockPanel.Dock="Right" Command="{Binding SelectMakeBiteCommand}">Browse</Button>
+					<TextBox HorizontalAlignment="Stretch" Margin="0 0 10 0" DockPanel.Dock="Left" Text="{Binding MakeBiteFileLocation, Mode=TwoWay}"/>
+				</DockPanel>
+				<TextBlock Margin="0 10 0 0" DockPanel.Dock="Top" TextWrapping="WrapWithOverflow">
+					Please select where to save the files generated:
+				</TextBlock>
+				<DockPanel DockPanel.Dock="Top">
+					<Button DockPanel.Dock="Right" Command="{Binding SelectSaveFolderCommand}">Browse</Button>
+					<TextBox HorizontalAlignment="Stretch" Margin="0 0 10 0" DockPanel.Dock="Left" Text="{Binding SaveFolderLocation, Mode=TwoWay}"/>
+				</DockPanel>
+				<TextBlock Margin="0 10 0 0" DockPanel.Dock="Top" TextWrapping="WrapWithOverflow">
+					Please select what name to give the mod file you are generating:
+				</TextBlock>
+				<DockPanel DockPanel.Dock="Top">
+					<TextBox HorizontalAlignment="Stretch" Margin="0 0 10 0" DockPanel.Dock="Left" Text="{Binding ModName, Mode=TwoWay}"/>
+				</DockPanel>
+				<TextBlock  DockPanel.Dock="Top" Margin="0 30" TextWrapping="WrapWithOverflow">
+					Please paste into the box below the list of names to use for mother base soldiers. The list
+					is ordered such that the names at the top of the list are easier to find in game. In
+					fact, the first 61 names especially will be used repeatedly throughout the game. It is recommended to provide
+					at least that amount.
+				</TextBlock >
+				<Button Margin="10" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Command="{Binding CreateModCommand}">Create Mod</Button>
+				<ItemsRepeater  DockPanel.Dock="Bottom" ItemsSource="{Binding ErrorMessages}">
+					<ItemsRepeater.ItemTemplate>
+						<DataTemplate>
+							<Border BorderBrush="Red" BorderThickness="1"
+									CornerRadius="4" Padding="4" Background="Pink" >
+								<TextBlock Text="{Binding}"/>
+							</Border>
+						</DataTemplate>
+					</ItemsRepeater.ItemTemplate>
+				</ItemsRepeater >
+				<TextBox AcceptsReturn="True" Name="NamesList" DockPanel.Dock="Left" Width="200" VerticalAlignment="Stretch"  Margin="10 0"
+						 Text="{Binding ListOfNames, Mode=TwoWay}" TextChanged="UpdateNames"/>
+
+				<ScrollViewer VerticalScrollBarVisibility="Auto">
+					<ItemsRepeater  DockPanel.Dock="Right"  ItemsSource="{Binding NameWarnings}">
+						<ItemsRepeater.ItemTemplate>
+							<DataTemplate>
+								<Border BorderBrush="Orange" BorderThickness="1"
+										CornerRadius="4" Padding="4"  Background="LightYellow" >
+									<TextBlock Text="{Binding}"  TextWrapping="WrapWithOverflow"/>
+								</Border>
+							</DataTemplate>
+						</ItemsRepeater.ItemTemplate>
+					</ItemsRepeater >
+				</ScrollViewer>
+			</DockPanel>
+		</TabItem>
+
+		<TabItem Header="Help">
+			<StackPanel Margin="10" Spacing="10">
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						Thanks to the following
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							SnakeBite developers - For creating SnakeBite/MakeBite that this tool relies on.
+						</TextBlock >
+						<HyperlinkButton Margin="0" Padding="0" NavigateUri="https://github.com/TinManTex/SnakeBite" >https://github.com/TinManTex/SnakeBite</HyperlinkButton>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							<LineBreak/>
+							Atvaark - For making the FoxEngine TranslationTool whose code is re-used here. Additionally they
+							made several other tools necessary for working with MGSV mods.
+						</TextBlock >
+						<HyperlinkButton Margin="0" Padding="0" NavigateUri="https://github.com/Atvaark/FoxEngine.TranslationTool" >https://github.com/Atvaark/FoxEngine.TranslationTool</HyperlinkButton>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							<LineBreak/>
+							Unknown321 - For putting together a list of which unique soldiers are found in which missions.
+							<LineBreak/>
+							(This link contains spoilers to the game. Specifically characters that appear and mission names.)
+						</TextBlock>
+						<HyperlinkButton Margin="0" Padding="0" NavigateUri="https://unknown321.github.io/mgswaifus/" >https://unknown321.github.io/mgswaifus/</HyperlinkButton>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							<LineBreak/>
+							And of course, the staff who helped make Metal Gear Solid: The Phantom Pain in the first place!
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						What is the purpose of this tool?
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							This tool can be used if you want to replace the names of mother base soldiers in
+							<Bold>Metal Gear Solid: The Phantom Pain</Bold> with names of your own choosing.
+							Using a list of names you provide, this tool will generate a .mgsv mod file.
+							This mod file, when loaded using SnakeBite Mod Manager, will use names from the list
+							for the most of the mother base soldiers in The Phantom Pain.
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						How does selecting names in the base game work?
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							The Phantom Pain normally reads the soldier names from a static resource file.
+							The names contained within this resource file game broadly separates the names into three categories:
+						</TextBlock>
+						<TextBlock Margin="20, 10" TextWrapping="WrapWithOverflow">
+							<Bold>Unique Soldier Names -</Bold> These names are assigned to certain "special" soldiers you extract.
+							For example in an unmodded version of the game, if you extract the base commander from Mission 1
+							they will always be named "Wild Platypus" when they join as a recruit. There is no randomness involved.
+							<LineBreak/><LineBreak/>
+							<Bold>Adjectives -</Bold> When extracting a non-unique soldier, the first part of their name
+							is selected randomly from a pool of adjectives stored in the resource file. For example, if you extract
+							a soldier while in free roam and they are named "Bloody Hyena", "Bloody" came from this pool of names.
+							Since it is random, they could have just as easily been "Lucid Hyena".
+							<LineBreak/><LineBreak/>
+							<Bold>Animal Names -</Bold> When extracting a non-unique soldier, the second part of their name
+							is selected randomly from a pool of animal themed name stored in the resource file. For example, if you
+							extract a soldier while in free roam and they are named "Bloody Hyena", "Hyena" came from this
+							pool of names. Since it is random, they could have just as easily been "Bloody Mongoose".
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						How do mod files created by this tool change the base game?
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							The mods created with this tool very simply replace the resource file that contains names
+							with a new resource file containing names from the list you provide this tool.
+							Each category of names in the file are changed as such:
+						</TextBlock>
+						<TextBlock Margin="20, 10" TextWrapping="WrapWithOverflow">
+							<Bold>Unique Soldier Names -</Bold> If the soldier's name has just one part to it, it is
+							substituted with a name from the list. If the soldier's name has more than one part,
+							only the last part is substituted with a name from the list and it keeps the adjective part.
+							For example "Slimy Rat" might become "Slimy Harold". Lastly, there are a few names that I felt
+							shouldn't be changed as they are in some way special, so they simply do not change.
+							<LineBreak/><LineBreak/>
+							<Bold>Adjectives -</Bold> No changes. For what I wanted to originally accomplish with this mod,
+							these didn't have to change, so I didn't change them.
+							<LineBreak/><LineBreak/>
+							<Bold>Animal Names -</Bold> Each animal name is substituted with a name from the list.
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						What limitations are there in the mods created by this tool?
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							Because the mods created with this tool only aim to replace the resource file
+							that contains names, there are limitations they have to abide by:
+							<LineBreak/><LineBreak/>
+							The mods cannot change which name the game chooses. E.g. it cannot make unqiue soldiers
+							pull from the pool of random names or vice versa.
+							<LineBreak/><LineBreak/>
+							The resource file must contain an exact number of records, no more, no less. Mods created by
+							this tool replace exactly 296 names. If the list provided to the tool has too many,
+							only the first 296 will be used. If the list does not have enough, the tool will repeat names
+							to pad out the length of the list until it has exactly 296 names. The tool does
+							this in a 'smart' manner where the names that are least likely to be encountered in game are
+							used to pad out the list; effectively increasing the lieklihood of seeing those names.
+							<LineBreak/><LineBreak/>
+							From limited testing (any corrections are welcome) The Phantom Pain appears to only support
+							characters from the Latin-1 character set for names. E.g. latin characters (A-Za-z),
+							latin characters (such as Ë or á), numbers (0-9), punctuation (such as @ or ¡) are okay to use,
+							but other characters such as emojis or those from other writing scripts like Cyrillic or Kanji
+							will not appear.
+							<LineBreak/><LineBreak/>
+							The mods created by this tool only affect the game when using English as the selected language.
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+				<Expander VerticalAlignment="Top">
+					<Expander.Header>
+						Contributing or Requests
+					</Expander.Header>
+					<StackPanel>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							This tool is maintained here:
+						</TextBlock>
+						<HyperlinkButton Margin="0" Padding="0" NavigateUri="https://github.com/bird-toe/mgsv-tpp-soldier-name-replacer" >https://github.com/bird-toe/mgsv-tpp-soldier-name-replacer</HyperlinkButton>
+						<TextBlock TextWrapping="WrapWithOverflow">
+							<LineBreak/>
+							If you would like to see any changes or if you found a bug in this tool, you can help in one of
+							three ways (in order of preference):
+							<LineBreak/><LineBreak/>
+							1. Contribute directly to the improvement. Any pull requests by developers should follow the Github Flow.
+							<LineBreak/><LineBreak/>
+							2. Opening an issue in Github.
+							<LineBreak/><LineBreak/>
+							3. Messaging myself through any platform I have uploaded this tool.
+						</TextBlock>
+					</StackPanel>
+				</Expander>
+			</StackPanel>
+		</TabItem>
+	</TabControl>
+</UserControl>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Name Replacer" Version="1.0.0" Author="mgsv-tpp-soldier-name-replacer" Website="https://github.com/bird-toe/mgsv-tpp-soldier-name-replacer">
+  <MGSVersion Version="1.0.15.3" />
+  <SBVersion Version="0.8.0.0" />
+  <Description>Replaces the Diamond Dog soldiers with custom names. (English language)
+
+Install through Snakebite Mod Manager https://www.nexusmods.com/metalgearsolidvtpp/mods/106
+
+If you only use this mod, you are NOT required to launch the game from Snakebite (although you can if you want). Snakebite is only necessary to install or unintall the mod and the game can be launched from Steam after the mod is installed.
+
+If the game updates and SnakeBite says the version doesn't match, it is probably fine due to the low chance of Konami updating the name files that are modified.
+
+Incompatible with any mod that also changes Diamond Dog soldier names. Should be compatible with any others.
+
+If, for some reason, the Dimaond Dog soldiers appear to not have names, it would be this mod's fault. Uninstalling it through Snakebite will fix it.</Description>
+  <QarEntries>
+    <QarEntry Hash="5920030714882887685" FilePath="/Assets/tpp/pack/ui/lang/lang_default_data_eng.fpk" Compressed="true" ContentHash="6384C5D246D137FB4BD7EDBB56CCD8E6" />
+  </QarEntries>
+  <FpkEntries>
+    <FpkEntry FpkFile="/Assets/tpp/pack/ui/lang/lang_default_data_eng.fpk" FilePath="/Assets/tpp/lang/ui/mb_staff_name.eng.lng2" ContentHash="E5549C3C6023EC687797E92B89C757C7" />
+  </FpkEntries>
+</ModEntry>
