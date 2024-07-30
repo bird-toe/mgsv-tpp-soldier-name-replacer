@@ -7,6 +7,8 @@
     <Nullable>enable</Nullable>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+	<RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+	<AssemblyName>MgsvNameReplacer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
