@@ -225,7 +225,7 @@ Additionally, file showing where you can find each soldier has been created:
 
         if (Names.Count() > MAXIMUM_NUMBER_OF_NAMES) // This is the number of entries in the list that can be replaced. Add a warning if the list is more than this as it will ignore extras.
         {
-            NameWarnings.Add($"List has less than {MAXIMUM_NUMBER_OF_NAMES} names. Only the first {MAXIMUM_NUMBER_OF_NAMES} will be included in the mod. Any after that will be ignored.");
+            NameWarnings.Add($"List has more than {MAXIMUM_NUMBER_OF_NAMES} names. Only the first {MAXIMUM_NUMBER_OF_NAMES} will be included in the mod. Any after that will be ignored.");
         }
 
         foreach (var name in Names) //Lets do this type of warning last since there may be repeated entries.
