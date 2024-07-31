@@ -1,0 +1,34 @@
+name: release new version
+
+on:
+  push:
+    tags: [ 'v*.*.*' ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Publish
+      run: dotnet publish MgsvTppSoldierNameReplacer.Desktop -o output -c Release -r win-x64 -p:PublishReadyToRun=true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true --self-contained true
+      
+    - name: Create Release
+      uses: softprops/action-gh-release@v2.0.8
+      with:
+        files: output/MgsvNameReplacer
+        fail_on_unmatched_files: true
+        make_latest: true
+          
