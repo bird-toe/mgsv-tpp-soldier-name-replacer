@@ -20,7 +20,7 @@ public partial class MainView : UserControl
         //Create Warnings
         context.NameWarnings.Clear();
 
-        if (context.Names.Length < MainViewModel.SOFT_MINIMUM_NUMBER_OF_NAMES) // The soft minimum is based on the number of soliders in the random names pool. Add a warning if the list is less than this amount as players will see many many repeats.
+        if (context.Names.Length < MainViewModel.SOFT_MINIMUM_NUMBER_OF_NAMES && !(context.PartiallyReplaceNames ?? false )) // The soft minimum is based on the number of soliders in the random names pool. Add a warning if the list is less than this amount as players will see many many repeats.
         {
             context.NameWarnings.Add($"List has less than {MainViewModel.SOFT_MINIMUM_NUMBER_OF_NAMES} names. If more aren't added, there will be an excessive number of repeated names in game.");
         }
