@@ -32,7 +32,7 @@
 					</StackPanel>
 				</Expander>
 				<TextBlock Margin="0 10 0 0" DockPanel.Dock="Top" TextWrapping="WrapWithOverflow">
-					Please select the location of the MakeBite executable. This should have been installed alongside SnakeBite.
+					Please select the MakeBite executable. This should have been installed alongside SnakeBite.
 				</TextBlock>
 				<DockPanel DockPanel.Dock="Top">
 					<Button DockPanel.Dock="Right" Command="{Binding SelectMakeBiteCommand}">Browse</Button>
@@ -68,6 +68,9 @@
 						</DataTemplate>
 					</ItemsRepeater.ItemTemplate>
 				</ItemsRepeater >
+				<DockPanel DockPanel.Dock="Bottom" Margin="0 10 0 0">
+					<CheckBox IsChecked="{Binding PartiallyReplaceNames, Mode=TwoWay}">Only replace some soldier names. When checked, this option will only replace some of the soldiers in the game with those in the provided list. This is recommended when there are less than 61 names provided.</CheckBox>
+				</DockPanel>
 				<TextBox AcceptsReturn="True" Name="NamesList" DockPanel.Dock="Left" Width="200" VerticalAlignment="Stretch"  Margin="10 0"
 						 Text="{Binding ListOfNames, Mode=TwoWay}" TextChanged="UpdateNames"/>
 

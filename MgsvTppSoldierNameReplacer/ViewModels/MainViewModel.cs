@@ -39,7 +39,9 @@ public partial class MainViewModel : ViewModelBase
     public string _modName = "MyCustomNames";
     [ObservableProperty]
     public string _listOfNames = "";
-    
+    [ObservableProperty]
+    public bool? _partiallyReplaceNames = false;
+
     public string[] Names = [];
 
     [ObservableProperty]
@@ -80,7 +82,7 @@ public partial class MainViewModel : ViewModelBase
         if (filesService is null) throw new NullReferenceException("Missing File Service instance.");
 
         ErrorMessages.Clear();
-        if(Names.Length == 1)
+        if(Names.Length < 1)
         {
             ErrorMessages.Add("No names provided in list.");
             return;
@@ -107,36 +109,46 @@ public partial class MainViewModel : ViewModelBase
             {
                 string nameToReplace;
 
-                // We read from the list forwards, then backwards, repeating until we have replaced all names in the template file. Since the tempalte files
-                // have the name placeholders saved in order where $NAME1$ is the most common and $NAME296$ is the least, this distributes names across soldiers almost optimally
-                if(incrementing)
+                // If we are only partially replacing the names, once we reach the end of the provided names, we can finish the rest off with the original names
+                if ((PartiallyReplaceNames ?? false) && j == Names.Length)
                 {
-                    if(j == Names.Length)
-                    {
-                        incrementing = false;
-                        j--; //Set it to and use the last name in the list
-                        nameToReplace = Names[j];
-                        j--;
-                    } else {
-                        nameToReplace = Names[j];
-                        j++;
-                    }
-                } else
+                    nameToReplace = ORIGINAL_NAMES[i - 1];
+                }
+                else
                 {
-                    if (j < 0)
+                    // We read from the list forwards, then backwards, repeating until we have replaced all names in the template file. Since the template files
+                    // have the name placeholders saved in order where $NAME1$ is the most common and $NAME296$ is the least, this distributes names across soldiers almost optimally
+                    if (incrementing)
                     {
-                        incrementing = true;
-                        j++; //Set it to and use the first name in the list
-                        nameToReplace = Names[j];
-                        j++;
+                        if (j == Names.Length)
+                        {
+                            incrementing = false;
+                            j--; //Set it to and use the last name in the list
+                            nameToReplace = Names[j];
+                            j--;
+                        }
+                        else
+                        {
+                            nameToReplace = Names[j];
+                            j++;
+                        }
                     }
                     else
                     {
-                        nameToReplace = Names[j];
-                        j--;
+                        if (j < 0)
+                        {
+                            incrementing = true;
+                            j++; //Set it to and use the first name in the list
+                            nameToReplace = Names[j];
+                            j++;
+                        }
+                        else
+                        {
+                            nameToReplace = Names[j];
+                            j--;
+                        }
                     }
                 }
-
                 xml = xml.Replace($"$NAME{i}$", nameToReplace);
                 csv = csv.Replace($"$NAME{i}$", nameToReplace.Replace("\"", "\"\"")); //Records will already be double quoted, so all we need to do is escpae any double quotes
             }
@@ -200,7 +212,7 @@ public partial class MainViewModel : ViewModelBase
             .GetMessageBoxStandard("Success!", 
 @$"A mod file has been created: 
     {ModName}.mgsv.
-Additionally, file showing where you can find each soldier has been created: 
+Additionally, a file detailing which missions in the game each soldier might be found has been created: 
     {ModName}Mapping.csv",
                 ButtonEnum.Ok);
 
@@ -243,4 +255,304 @@ Additionally, file showing where you can find each soldier has been created:
         string result = Encoding.GetEncoding("ISO-8859-1").GetString(bytes);
         return string.Equals(input, result);
     }
+
+    private readonly string[] ORIGINAL_NAMES =
+    {
+        "Boa",
+        "Marlin",
+        "Python",
+        "Jackal",
+        "Eel",
+        "Whale",
+        "Serpent",
+        "Buzzard",
+        "Osprey",
+        "Harrier",
+        "Agama",
+        "Husky",
+        "Wallaby",
+        "Roach",
+        "Dingo",
+        "Raptor",
+        "Vulture",
+        "Panther",
+        "Hound",
+        "Rhino",
+        "Hyena",
+        "Viper",
+        "Hippo",
+        "Mammoth",
+        "Badger",
+        "Gibbon",
+        "Shark",
+        "Eagle",
+        "Bat",
+        "Bear",
+        "Hawk",
+        "Cobra",
+        "Dragon",
+        "Crow",
+        "Cat",
+        "Beetle",
+        "Gecko",
+        "Octopus",
+        "Crab",
+        "Ox",
+        "Bull",
+        "Ram",
+        "Bison",
+        "Wasp",
+        "Phoenix",
+        "Lion",
+        "Tiger",
+        "Rooster",
+        "Buffalo",
+        "Moose",
+        "Moth",
+        "Slug",
+        "Hog",
+        "Gator",
+        "Iguana",
+        "Goat",
+        "Mastiff",
+        "Hippo",
+        "Sloth",
+        "Worm",
+        "Mustang",
+        "Vile Buffalo",
+        "Gray Salamander",
+        "Brass Armadillo",
+        "Roaring Hedgehog",
+        "Sly Mastodon",
+        "Devil Squirrel",
+        "Bullet Platypus",
+        "Green Tarantula",
+        "Flaming Basilisk",
+        "Night Crocodile",
+        "Sadistic Buzzard",
+        "Hungry Barracuda",
+        "Growling Harrier",
+        "Hunting Harrier",
+        "Sunny Buzzard",
+        "Howling Capybara",
+        "Panzer Mongoose",
+        "Mad Centipede",
+        "Sly Harrier",
+        "Rampant Buzzard",
+        "Panzer Buffalo",
+        "Roaring Stallion",
+        "Dire Barracuda",
+        "Stone Mastodon",
+        "Raving Mongoose",
+        "Eagle Ray",
+        "Raven",
+        "Grizzly Squirrel",
+        "Doom Kangaroo",
+        "Parrot",
+        "Jackal",
+        "Komodo Dragon",
+        "Jade Capybara",
+        "Bullet Armadillo",
+        "Night Wallaby",
+        "Cunning Stallion",
+        "Laughing Wallaby",
+        "Crystal Squirrel",
+        "Silent Crocodile",
+        "Dire Capybara",
+        "Blue Kangaroo",
+        "Copper Stallion",
+        "Blazing Stallion",
+        "Bullet Harrier",
+        "Ochre Harrier",
+        "Bitter Platypus",
+        "Silent Basilisk",
+        "Steel Kangaroo",
+        "Howling Stallion",
+        "Stalking Wallaby",
+        "Jumping Harrier",
+        "Copper Buzzard",
+        "Hungry Stallion",
+        "Blazing Buzzard",
+        "Greedy Barracuda",
+        "Steel Mongoose",
+        "Gray Mongoose",
+        "Pouncing Wallaby",
+        "Elephant",
+        "Viper",
+        "Doom Squirrel",
+        "Blue Mastodon",
+        "Sky Centipede",
+        "Vampire Platypus",
+        "Goblin Squirrel",
+        "Wild Chameleon",
+        "Doom Centipede",
+        "Brutal Centipede",
+        "Dizzy Capybara",
+        "Pouncing Harrier",
+        "Bloody Crocodile",
+        "Poison Buffalo",
+        "Killer Squirrel",
+        "Pouncing Buzzard",
+        "Greedy Armadillo",
+        "Jade Tree Frog",
+        "Spunky Crocodile",
+        "Black Harrier",
+        "Silent Mastodon",
+        "White Mastodon",
+        "Green Tree Frog",
+        "Ashen Stallion",
+        "Green Sturgeon",
+        "Bastard Harrier",
+        "Brutal Tree Frog",
+        "Killer Stallion",
+        "Raging Buzzard",
+        "Night Sturgeon",
+        "Hulking Mastiff",
+        "Hungry Squirrel",
+        "Dizzy Centipede",
+        "Lonely Buffalo",
+        "Dancing Mongoose",
+        "Cunning Mongoose",
+        "Sadistic Mastiff",
+        "Ziang Tan",
+        "Eye",
+        "Finger",
+        "Mosquito",
+        "Malak",
+        "Viscount",
+        "Rumble Tarantula",
+        "Devil Chameleon",
+        "Dire Crocodile",
+        "Gray Stallion",
+        "Raving Harrier",
+        "Ochre Capybara",
+        "Death Platypus",
+        "Shining Kangaroo",
+        "Sunny Mongoose",
+        "Wild Platypus",
+        "Sunny Platypus",
+        "Crying Harrier",
+        "Crimson Kangaroo",
+        "Falcon",
+        "Ostrich",
+        "Rat",
+        "Running Harrier",
+        "Biting Barracuda",
+        "Spunky Sturgeon",
+        "Killer Hedgehog",
+        "Ashen Platypus",
+        "Running Basilisk",
+        "Iron Harrier",
+        "Jade Centipede",
+        "Dire Armadillo",
+        "Scowling Wallaby",
+        "Fire Kangaroo",
+        "Brass Squirrel",
+        "Cunning Mastiff",
+        "Spying Harrier",
+        "Flaming Buffalo",
+        "Running Mongoose",
+        "Frantic Squirrel",
+        "Blazing Mastodon",
+        "Biting Tree Frog",
+        "Gray Chameleon",
+        "Razor Hedgehog",
+        "Howling Platypus",
+        "Blue Salamander",
+        "Creeping Buzzard",
+        "Glacier Mongoose",
+        "Spunky Platypus",
+        "Frigid Stallion",
+        "Prowling Wallaby",
+        "Flaming Stallion",
+        "Ashen Mongoose",
+        "Cannibal Harrier",
+        "Sly Sturgeon",
+        "Greedy Wallaby",
+        "Boa",
+        "Marlin",
+        "Python",
+        "Jackal",
+        "Eel",
+        "Whale",
+        "Serpent",
+        "Buzzard",
+        "Osprey",
+        "Harrier",
+        "Agama",
+        "Husky",
+        "Wallaby",
+        "Roach",
+        "Weasel",
+        "Wombat",
+        "Boar",
+        "Leopard",
+        "Mole",
+        "Piranha",
+        "Adder",
+        "Dhole",
+        "Llama",
+        "Echidna",
+        "Coyote",
+        "Ferret",
+        "Orca",
+        "Spider",
+        "Hornet",
+        "Cheetah",
+        "Gazelle",
+        "Elk",
+        "Griffon",
+        "Gopher",
+        "Marmot",
+        "Wolf",
+        "Zebra",
+        "Wombat",
+        "Lizard",
+        "Weevil",
+        "Raccoon",
+        "Wasp",
+        "Sparrow",
+        "Falcon",
+        "Jaguar",
+        "Lynx",
+        "Owl",
+        "Otter",
+        "Heron",
+        "Macaw",
+        "Koala",
+        "Turkey",
+        "Panda",
+        "Mouse",
+        "Mantis",
+        "Kitten",
+        "Swan",
+        "Unicorn",
+        "Tigress",
+        "Gray Wallaby",
+        "Ochre Chameleon",
+        "Grizzly Hedgehog",
+        "Hungry Crocodile",
+        "Wild Harrier",
+        "Night Tree Frog",
+        "Pirate Capybara",
+        "Roaring Capybara",
+        "Bitter Centipede",
+        "Blue Chameleon",
+        "Midnight Mastiff",
+        "Frigid Mongoose",
+        "Hunting Stallion",
+        "Assassin Harrier",
+        "Mad Wallaby",
+        "Wild Stallion",
+        "Crying Sturgeon",
+        "Viridian Hound",
+        "Emerald Hound",
+        "Crimson Canine",
+        "Garnet Canine",
+        "Gold Fox",
+        "Amber Fox",
+        "Silver Skull",
+        "Ivory Skull",
+        "Blue Armadillo"
+    };
 }
